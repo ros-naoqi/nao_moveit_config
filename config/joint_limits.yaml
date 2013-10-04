@@ -1,0 +1,51 @@
+joint_limits:
+  LShoulderPitch:
+    has_velocity_limits: true
+    max_velocity: 5
+    has_acceleration_limits: true
+    max_acceleration: 1
+  LShoulderRoll:
+    has_velocity_limits: true
+    max_velocity: 5
+    has_acceleration_limits: true
+    max_acceleration: 1
+  LElbowYaw:
+    has_velocity_limits: true
+    max_velocity: 5
+    has_acceleration_limits: true
+    max_acceleration: 1
+  LElbowRoll:
+    has_velocity_limits: true
+    max_velocity: 5
+    has_acceleration_limits: true
+    max_acceleration: 1
+  LWristYaw:
+    has_velocity_limits: true
+    max_velocity: 5
+    has_acceleration_limits: true
+    max_acceleration: 1
+  RShoulderPitch:
+    has_velocity_limits: true
+    max_velocity: 5
+    has_acceleration_limits: true
+    max_acceleration: 1
+  RShoulderRoll:
+    has_velocity_limits: true
+    max_velocity: 5
+    has_acceleration_limits: true
+    max_acceleration: 1
+  RElbowYaw:
+    has_velocity_limits: true
+    max_velocity: 5
+    has_acceleration_limits: true
+    max_acceleration: 1
+  RElbowRoll:
+    has_velocity_limits: true
+    max_velocity: 5
+    has_acceleration_limits: true
+    max_acceleration: 1
+  RWristYaw:
+    has_velocity_limits: true
+    max_velocity: 5
+    has_acceleration_limits: true
+    max_acceleration: 1
