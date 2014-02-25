@@ -7,9 +7,8 @@ Panels:
         - /MotionPlanning1
         - /MotionPlanning1/Scene Robot1
         - /MotionPlanning1/Planning Request1
-        - /MotionPlanning1/Planned Path1
       Splitter Ratio: 0.74256
-    Tree Height: 239
+    Tree Height: 451
   - Class: rviz/Help
     Name: Help
   - Class: rviz/Views
@@ -42,153 +41,211 @@ Visualization Manager:
       Enabled: true
       MoveIt_Goal_Tolerance: 0
       MoveIt_Planning_Time: 5
-      MoveIt_Use_Constraint_Aware_IK: false
+      MoveIt_Use_Constraint_Aware_IK: true
       MoveIt_Warehouse_Host: 127.0.0.1
       MoveIt_Warehouse_Port: 33829
       Name: MotionPlanning
       Planned Path:
         Links:
           All Links Enabled: true
-          CameraBottom_frame:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          CameraTop_frame:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
           Expand Joint Details: false
           Expand Link Details: false
           Expand Tree: false
-          Head:
+          HeadPitchLink:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          LAnkle:
+          HeadYawLink:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          LBicep:
+          LAnklePitchLink:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          LElbow:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          LFeet:
+          LAnkleRollLink:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          LFinger:
+          LElbowRollLink:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          LForeArm:
+          LElbowYawLink:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          LFinger11Link:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          LHand:
+          LFinger12Link:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          LHip:
+          LFinger13Link:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          LPelvis:
+          LFinger21Link:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          LShoulder:
+          LFinger22Link:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          LThigh:
+          LFinger23Link:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          LTibia:
+          LHipPitchLink:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          LHipRollLink:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          LHipYawPitchLink:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          LKneePitchLink:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          LShoulderPitchLink:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          LShoulderRollLink:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          LThumb1Link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          LThumb2Link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          LWristYawLink:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
           Link Tree Style: Links in Alphabetic Order
-          Neck:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          RAnkle:
+          RAnklePitchLink:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          RBicep:
+          RAnkleRollLink:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          RElbow:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          RFeet:
+          RElbowRollLink:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          RFinger:
+          RElbowYawLink:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          RFinger11Link:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          RForeArm:
+          RFinger12Link:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          RHand:
+          RFinger13Link:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          RHip:
+          RFinger21Link:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          RPelvis:
+          RFinger22Link:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          RShoulder:
+          RFinger23Link:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          RThigh:
+          RHipPitchLink:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          RTibia:
+          RHipRollLink:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          Torso:
+          RHipYawPitchLink:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          RKneePitchLink:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          RShoulderPitchLink:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          RShoulderRollLink:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          RThumb1Link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          RThumb2Link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          RWristYawLink:
             Alpha: 1
             Show Axes: false
             Show Trail: false
@@ -201,7 +258,27 @@ Visualization Manager:
             Alpha: 1
             Show Axes: false
             Show Trail: false
+          l_ankle:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          l_gripper:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
           l_sole:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          l_wrist:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          r_ankle:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          r_gripper:
             Alpha: 1
             Show Axes: false
             Show Trail: false
@@ -209,7 +286,16 @@ Visualization Manager:
             Alpha: 1
             Show Axes: false
             Show Trail: false
-        Loop Animation: false
+          r_wrist:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          torso:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+        Loop Animation: true
         Robot Alpha: 0.5
         Show Robot Collision: false
         Show Robot Visual: true
@@ -229,16 +315,16 @@ Visualization Manager:
         Goal State Color: 250; 128; 0
         Interactive Marker Size: 0
         Joint Violation Color: 255; 0; 255
-        Planning Group: whole_body
+        Planning Group: left_arm
         Query Goal State: true
         Query Start State: false
-        Show Workspace: true
+        Show Workspace: false
         Start State Alpha: 1
         Start State Color: 0; 255; 0
       Planning Scene Topic: /move_group/monitored_planning_scene
       Robot Description: robot_description
       Scene Geometry:
-        Scene Alpha: 0.9
+        Scene Alpha: 1
         Scene Color: 50; 230; 50
         Scene Display Time: 0.2
         Show Scene Geometry: true
@@ -248,146 +334,204 @@ Visualization Manager:
         Attached Body Color: 150; 50; 150
         Links:
           All Links Enabled: true
-          CameraBottom_frame:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          CameraTop_frame:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
           Expand Joint Details: false
           Expand Link Details: false
           Expand Tree: false
-          Head:
+          HeadPitchLink:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          LAnkle:
+          HeadYawLink:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          LBicep:
+          LAnklePitchLink:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          LElbow:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          LFeet:
+          LAnkleRollLink:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          LFinger:
+          LElbowRollLink:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          LForeArm:
+          LElbowYawLink:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          LFinger11Link:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          LHand:
+          LFinger12Link:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          LHip:
+          LFinger13Link:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          LPelvis:
+          LFinger21Link:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          LShoulder:
+          LFinger22Link:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          LThigh:
+          LFinger23Link:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          LTibia:
+          LHipPitchLink:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          LHipRollLink:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          LHipYawPitchLink:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          LKneePitchLink:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          LShoulderPitchLink:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          LShoulderRollLink:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          LThumb1Link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          LThumb2Link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          LWristYawLink:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
           Link Tree Style: Links in Alphabetic Order
-          Neck:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          RAnkle:
+          RAnklePitchLink:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          RBicep:
+          RAnkleRollLink:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          RElbow:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          RFeet:
+          RElbowRollLink:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          RFinger:
+          RElbowYawLink:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          RFinger11Link:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          RForeArm:
+          RFinger12Link:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          RHand:
+          RFinger13Link:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          RHip:
+          RFinger21Link:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          RPelvis:
+          RFinger22Link:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          RShoulder:
+          RFinger23Link:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          RThigh:
+          RHipPitchLink:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          RTibia:
+          RHipRollLink:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          Torso:
+          RHipYawPitchLink:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          RKneePitchLink:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          RShoulderPitchLink:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          RShoulderRollLink:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          RThumb1Link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          RThumb2Link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          RWristYawLink:
             Alpha: 1
             Show Axes: false
             Show Trail: false
@@ -400,7 +544,27 @@ Visualization Manager:
             Alpha: 1
             Show Axes: false
             Show Trail: false
+          l_ankle:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          l_gripper:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
           l_sole:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          l_wrist:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          r_ankle:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          r_gripper:
             Alpha: 1
             Show Axes: false
             Show Trail: false
@@ -408,48 +572,57 @@ Visualization Manager:
             Alpha: 1
             Show Axes: false
             Show Trail: false
+          r_wrist:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          torso:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
         Robot Alpha: 0.5
-        Show Scene Robot: true
+        Show Robot Collision: false
+        Show Robot Visual: true
       Value: true
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
-    Fixed Frame: odom_combined
+    Fixed Frame: base_link
+    Frame Rate: 30
   Name: root
   Tools:
-    - Class: rviz/Interact
-      Hide Inactive Objects: true
     - Class: rviz/MoveCamera
     - Class: rviz/Select
   Value: true
   Views:
     Current:
       Class: rviz/XYOrbit
-      Distance: 2.60795
+      Distance: 0.574615
       Focal Point:
-        X: 0.113567
-        Y: 0.10592
-        Z: 2.23518e-07
+        X: 0.0840578
+        Y: 0.205461
+        Z: 3.7253e-07
       Name: Current View
       Near Clip Distance: 0.01
-      Pitch: 0.184796
+      Pitch: 0.715205
       Target Frame: base_link
       Value: XYOrbit (rviz)
-      Yaw: 0.90677
+      Yaw: 1.49676
     Saved: ~
 Window Geometry:
   Displays:
     collapsed: false
-  Height: 847
+  Height: 1004
   Help:
     collapsed: false
   Hide Left Dock: false
   Hide Right Dock: false
   Motion Planning:
     collapsed: false
-  QMainWindow State: 000000ff00000000fd0000000100000000000002a200000309fc0200000005fb000000100044006900730070006c006100790073010000002800000184000000dd00fffffffb0000000800480065006c00700000000342000000bb0000007600fffffffb0000000a0056006900650077007300000003b0000000b0000000b000fffffffb0000000c00430061006d00650072006100000002ff000001610000000000000000fb0000001e004d006f00740069006f006e00200050006c0061006e006e0069006e006701000001b20000017f0000017400ffffff000002b50000030900000001000000020000000100000002fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  QMainWindow State: 000000ff00000000fd0000000100000000000001ed000003a2fc0200000005fb000000100044006900730070006c006100790073010000003000000251000000d501000005fb0000000800480065006c00700000000342000000bb0000007101000005fb0000000a0056006900650077007300000003b0000000b0000000a601000005fb0000000c00430061006d00650072006100000002ff000001610000000000000000fb0000001e004d006f00740069006f006e00200050006c0061006e006e0069006e006701000002840000014e000001450100000500000534000003a200000001000000020000000100000002fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
   Views:
     collapsed: false
-  Width: 1373
-  X: 58
-  Y: 24
+  Width: 1828
+  X: 88
+  Y: 0
