@@ -1,19 +1,18 @@
 controller_list:
   - name: fake_right_arm_controller
     joints:
-      - RShoulderPitch
       - RShoulderRoll
       - RElbowYaw
       - RElbowRoll
+      - RWristYaw
   - name: fake_left_arm_controller
     joints:
-      - LShoulderPitch
       - LShoulderRoll
       - LElbowYaw
       - LElbowRoll
-  - name: fake_right_gripper_controller
+      - LWristYaw
+  - name: fake_right_hand_controller
     joints:
-      - RWristYaw
       - RFinger11
       - RFinger12
       - RFinger13
@@ -22,9 +21,8 @@ controller_list:
       - RFinger23
       - RThumb1
       - RThumb2
-  - name: fake_left_gripper_controller
+  - name: fake_left_hand_controller
     joints:
-      - LWristYaw
       - LFinger11
       - LFinger12
       - LFinger13
@@ -33,3 +31,6 @@ controller_list:
       - LFinger23
       - LThumb1
       - LThumb2
+  - name: fake_base_controller
+    joints:
+      - virtual_joint

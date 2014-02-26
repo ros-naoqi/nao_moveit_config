@@ -10,21 +10,12 @@
     <!--CHAINS: When a chain is specified, all the links along the chain (including endpoints) are included in the group. Additionally, all the joints that are parents to included links are also included. This means that joints along the chain and the parent joint of the base link are included in the group-->
     <!--SUBGROUPS: Groups can also be formed by referencing to already defined group names-->
     <group name="right_arm">
-        <joint name="r_wrist_joint" />
-        <joint name="RElbowRoll" />
-        <joint name="RElbowYaw" />
-        <joint name="RShoulderPitch" />
-        <joint name="RShoulderRoll" />
+        <chain base_link="RShoulderPitchLink" tip_link="RWristYawLink" />
     </group>
     <group name="left_arm">
-        <joint name="l_wrist_joint" />
-        <joint name="LElbowRoll" />
-        <joint name="LElbowYaw" />
-        <joint name="LShoulderPitch" />
-        <joint name="LShoulderRoll" />
+        <chain base_link="LShoulderPitchLink" tip_link="LWristYawLink" />
     </group>
-    <group name="right_gripper">
-        <joint name="r_gripper_joint" />
+    <group name="right_hand">
         <joint name="RFinger11" />
         <joint name="RFinger12" />
         <joint name="RFinger13" />
@@ -33,10 +24,8 @@
         <joint name="RFinger23" />
         <joint name="RThumb1" />
         <joint name="RThumb2" />
-        <joint name="RWristYaw" />
     </group>
-    <group name="left_gripper">
-        <joint name="l_gripper_joint" />
+    <group name="left_hand">
         <joint name="LFinger11" />
         <joint name="LFinger12" />
         <joint name="LFinger13" />
@@ -45,11 +34,13 @@
         <joint name="LFinger23" />
         <joint name="LThumb1" />
         <joint name="LThumb2" />
-        <joint name="LWristYaw" />
+    </group>
+    <group name="base">
+        <joint name="virtual_joint" />
     </group>
     <!--END EFFECTOR: Purpose: Represent information about an end effector.-->
-    <end_effector name="right_gripper" parent_link="r_wrist" group="right_gripper" parent_group="right_arm" />
-    <end_effector name="left_gripper" parent_link="l_wrist" group="left_gripper" parent_group="left_arm" />
+    <end_effector name="left_gripper" parent_link="LWristYawLink" group="left_hand" parent_group="left_arm" />
+    <end_effector name="right_gripper" parent_link="RWristYawLink" group="right_hand" parent_group="right_arm" />
     <!--VIRTUAL JOINT: Purpose: this element defines a virtual joint between a robot link and an external frame of reference (considered fixed with respect to the robot)-->
     <virtual_joint name="virtual_joint" type="planar" parent_frame="odom_combined" child_link="base_link" />
     <!--DISABLE COLLISIONS: By default it is assumed that any link of the robot could potentially come into collision with any other link in the robot. This tag disables collision checking between a specified pair of links. -->

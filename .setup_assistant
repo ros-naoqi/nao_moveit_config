@@ -5,4 +5,4 @@ moveit_setup_assistant_config:
   SRDF:
     relative_path: config/Nao.srdf
   CONFIG:
-    generated_timestamp: 1393367974
+    generated_timestamp: 1393425195
