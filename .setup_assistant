@@ -1,7 +1,7 @@
 moveit_setup_assistant_config:
   URDF:
     package: ""
-    relative_path: /home/vrabaud/workspace/ws_nao/src/NAO_H25_V40.urdf
+    relative_path: urdf/nao_robot_v4.xacro/NAO_H25_V40.urdf
   SRDF:
     relative_path: config/Nao.srdf
   CONFIG:
