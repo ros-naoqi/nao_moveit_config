@@ -1,12 +1,14 @@
 controller_list:
   - name: fake_right_arm_controller
     joints:
+      - RShoulderPitch
       - RShoulderRoll
       - RElbowYaw
       - RElbowRoll
       - RWristYaw
   - name: fake_left_arm_controller
     joints:
+      - LShoulderPitch
       - LShoulderRoll
       - LElbowYaw
       - LElbowRoll

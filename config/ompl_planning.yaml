@@ -34,7 +34,7 @@ right_arm:
     - TRRTkConfigDefault
     - PRMkConfigDefault
     - PRMstarkConfigDefault
-  projection_evaluator: joints(RShoulderRoll,RElbowYaw)
+  projection_evaluator: joints(RShoulderPitch,RShoulderRoll)
   longest_valid_segment_fraction: 0.05
 left_arm:
   planner_configs:
@@ -49,7 +49,7 @@ left_arm:
     - TRRTkConfigDefault
     - PRMkConfigDefault
     - PRMstarkConfigDefault
-  projection_evaluator: joints(LShoulderRoll,LElbowYaw)
+  projection_evaluator: joints(LShoulderPitch,LShoulderRoll)
   longest_valid_segment_fraction: 0.05
 right_hand:
   planner_configs:
