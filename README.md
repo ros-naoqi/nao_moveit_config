@@ -17,19 +17,22 @@ Without robot
 -------------
 You can run this moveit package either unconnected to any robot or attached to a robot -real or simulated):
 For a standalone execution :
-roslaunch nao_moveit_config demo.launch
+
+    roslaunch nao_moveit_config demo.launch
 
 On a real nao
 --------------
 To launch it on a real nao : 
-roslaunch nao_dcm_bringup nao_dcm_H25_bringup_remote.launch << launch nao_bringup
-roslaunch nao_moveit_config moveit_planner.launch
+
+    roslaunch nao_dcm_bringup nao_dcm_H25_bringup_remote.launch
+    roslaunch nao_moveit_config moveit_planner.launch
 
 On a simulated nao (in gazebo)
 -----------------------------
 To launch it on a gazebo simulated nao (in gazebo):
-roslaunch nao_dcm_gazebo nao_dcm_gazebo_H25.launch
-roslaunch nao_moveit_config moveit_planner.launch
+
+    roslaunch nao_dcm_gazebo nao_dcm_gazebo_H25.launch
+    roslaunch nao_moveit_config moveit_planner.launch
 
 This is based on the work of Konstantinos Chatzilygeroudis: https://github.com/costashatz/nao_dcm.
 
