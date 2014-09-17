@@ -8,7 +8,7 @@ URDF and Textures used
 This moveit package is based on a textured nao :
 https://github.com/vrabaud/nao_meshes_generator
 
-The urdf used for the generation of the configuration file is embedded in this package. It's the same that the one in nao_description : https://github.com/keulYSMB/nao_robot/tree/devel/nao_description/urdf/naov4_generated_urdf
+The urdf used for the generation of the configuration file is embedded in this package. It's the same that the one in nao_description : https://github.com/keulYSMB/nao_robot/tree/devel/nao_description/urdf/naoV40_generated_urdf/nao.urdf
 
 How to use it
 =============
