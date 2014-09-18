@@ -2,8 +2,8 @@
 Changelog for package nao_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.0.1 (2014-09-18)
+------------------
 * fix typos
 * Update README.md
 * Update README.md
