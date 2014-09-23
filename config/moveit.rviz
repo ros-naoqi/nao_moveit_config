@@ -1,35 +1,20 @@
 Panels:
   - Class: rviz/Displays
-    Help Height: 81
+    Help Height: 0
     Name: Displays
     Property Tree Widget:
       Expanded:
-        - /Global Options1
-        - /Status1
         - /MotionPlanning1
         - /MotionPlanning1/Planning Request1
-        - /Image1
-      Splitter Ratio: 0.5
-    Tree Height: 258
-  - Class: rviz/Selection
-    Name: Selection
-  - Class: rviz/Tool Properties
-    Expanded:
-      - /2D Pose Estimate1
-      - /2D Nav Goal1
-      - /Publish Point1
-    Name: Tool Properties
-    Splitter Ratio: 0.588679
+      Splitter Ratio: 0.74256
+    Tree Height: 504
+  - Class: rviz/Help
+    Name: Help
   - Class: rviz/Views
     Expanded:
       - /Current View1
     Name: Views
     Splitter Ratio: 0.5
-  - Class: rviz/Time
-    Experimental: false
-    Name: Time
-    SyncMode: 0
-    SyncSource: ""
 Visualization Manager:
   Class: ""
   Displays:
@@ -62,7 +47,15 @@ Visualization Manager:
       Planned Path:
         Links:
           All Links Enabled: true
+          CameraBottom_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
           CameraTop_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          ChestButton_frame:
             Alpha: 1
             Show Axes: false
             Show Trail: false
@@ -74,6 +67,26 @@ Visualization Manager:
             Show Axes: false
             Show Trail: false
             Value: true
+          HeadTouchFront_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          HeadTouchMiddle_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          HeadTouchRear_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          ImuAccelerometer_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          ImuGyrometer_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
           LBicep:
             Alpha: 1
             Show Axes: false
@@ -83,11 +96,6 @@ Visualization Manager:
             Alpha: 1
             Show Axes: false
             Show Trail: false
-          LFeet:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
           LFinger11:
             Alpha: 1
             Show Axes: false
@@ -118,16 +126,56 @@ Visualization Manager:
             Show Axes: false
             Show Trail: false
             Value: true
+          LFootBumperLeft_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          LFootBumperRight_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
           LForeArm:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
+          LFsrFL_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          LFsrFR_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          LFsrRL_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          LFsrRR_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          LHandTouchBack_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          LHandTouchLeft_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          LHandTouchRight_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
           LHip:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
+          LInfraRed_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
           LPelvis:
             Alpha: 1
             Show Axes: false
@@ -138,7 +186,7 @@ Visualization Manager:
             Show Axes: false
             Show Trail: false
             Value: true
-          LSonar:
+          LSonar_frame:
             Alpha: 1
             Show Axes: false
             Show Trail: false
@@ -177,11 +225,6 @@ Visualization Manager:
             Alpha: 1
             Show Axes: false
             Show Trail: false
-          RFeet:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
           RFinger11:
             Alpha: 1
             Show Axes: false
@@ -212,16 +255,56 @@ Visualization Manager:
             Show Axes: false
             Show Trail: false
             Value: true
+          RFootBumperLeft_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          RFootBumperRight_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
           RForeArm:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
+          RFsrFL_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          RFsrFR_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          RFsrRL_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          RFsrRR_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          RHandTouchBack_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          RHandTouchLeft_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          RHandTouchRight_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
           RHip:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
+          RInfraRed_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
           RPelvis:
             Alpha: 1
             Show Axes: false
@@ -232,7 +315,7 @@ Visualization Manager:
             Show Axes: false
             Show Trail: false
             Value: true
-          RSonar:
+          RSonar_frame:
             Alpha: 1
             Show Axes: false
             Show Trail: false
@@ -277,6 +360,7 @@ Visualization Manager:
             Alpha: 1
             Show Axes: false
             Show Trail: false
+            Value: true
           l_wrist:
             Alpha: 1
             Show Axes: false
@@ -295,6 +379,7 @@ Visualization Manager:
             Alpha: 1
             Show Axes: false
             Show Trail: false
+            Value: true
           r_wrist:
             Alpha: 1
             Show Axes: false
@@ -305,7 +390,7 @@ Visualization Manager:
             Show Axes: false
             Show Trail: false
             Value: true
-        Loop Animation: false
+        Loop Animation: true
         Robot Alpha: 0.5
         Show Robot Collision: false
         Show Robot Visual: true
@@ -323,18 +408,18 @@ Visualization Manager:
         Colliding Link Color: 255; 0; 0
         Goal State Alpha: 0.5
         Goal State Color: 250; 128; 0
-        Interactive Marker Size: 0
+        Interactive Marker Size: 0.2
         Joint Violation Color: 255; 0; 255
         Planning Group: LeftArm
         Query Goal State: true
         Query Start State: false
         Show Workspace: false
-        Start State Alpha: 0.5
+        Start State Alpha: 0.7
         Start State Color: 0; 255; 0
       Planning Scene Topic: /move_group/monitored_planning_scene
       Robot Description: robot_description
       Scene Geometry:
-        Scene Alpha: 0.9
+        Scene Alpha: 1
         Scene Color: 50; 230; 50
         Scene Display Time: 0.2
         Show Scene Geometry: true
@@ -344,7 +429,15 @@ Visualization Manager:
         Attached Body Color: 150; 50; 150
         Links:
           All Links Enabled: true
+          CameraBottom_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
           CameraTop_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          ChestButton_frame:
             Alpha: 1
             Show Axes: false
             Show Trail: false
@@ -356,6 +449,26 @@ Visualization Manager:
             Show Axes: false
             Show Trail: false
             Value: true
+          HeadTouchFront_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          HeadTouchMiddle_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          HeadTouchRear_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          ImuAccelerometer_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          ImuGyrometer_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
           LBicep:
             Alpha: 1
             Show Axes: false
@@ -365,11 +478,6 @@ Visualization Manager:
             Alpha: 1
             Show Axes: false
             Show Trail: false
-          LFeet:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
           LFinger11:
             Alpha: 1
             Show Axes: false
@@ -400,16 +508,56 @@ Visualization Manager:
             Show Axes: false
             Show Trail: false
             Value: true
+          LFootBumperLeft_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          LFootBumperRight_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
           LForeArm:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
+          LFsrFL_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          LFsrFR_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          LFsrRL_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          LFsrRR_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          LHandTouchBack_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          LHandTouchLeft_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          LHandTouchRight_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
           LHip:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
+          LInfraRed_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
           LPelvis:
             Alpha: 1
             Show Axes: false
@@ -420,7 +568,7 @@ Visualization Manager:
             Show Axes: false
             Show Trail: false
             Value: true
-          LSonar:
+          LSonar_frame:
             Alpha: 1
             Show Axes: false
             Show Trail: false
@@ -459,11 +607,6 @@ Visualization Manager:
             Alpha: 1
             Show Axes: false
             Show Trail: false
-          RFeet:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
           RFinger11:
             Alpha: 1
             Show Axes: false
@@ -494,16 +637,56 @@ Visualization Manager:
             Show Axes: false
             Show Trail: false
             Value: true
+          RFootBumperLeft_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          RFootBumperRight_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
           RForeArm:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
+          RFsrFL_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          RFsrFR_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          RFsrRL_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          RFsrRR_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          RHandTouchBack_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          RHandTouchLeft_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          RHandTouchRight_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
           RHip:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
+          RInfraRed_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
           RPelvis:
             Alpha: 1
             Show Axes: false
@@ -514,7 +697,7 @@ Visualization Manager:
             Show Axes: false
             Show Trail: false
             Value: true
-          RSonar:
+          RSonar_frame:
             Alpha: 1
             Show Axes: false
             Show Trail: false
@@ -559,6 +742,7 @@ Visualization Manager:
             Alpha: 1
             Show Axes: false
             Show Trail: false
+            Value: true
           l_wrist:
             Alpha: 1
             Show Axes: false
@@ -577,6 +761,7 @@ Visualization Manager:
             Alpha: 1
             Show Axes: false
             Show Trail: false
+            Value: true
           r_wrist:
             Alpha: 1
             Show Axes: false
@@ -591,17 +776,6 @@ Visualization Manager:
         Show Robot Collision: false
         Show Robot Visual: true
       Value: true
-    - Class: rviz/Image
-      Enabled: true
-      Image Topic: /nao_camera/image_raw
-      Max Value: 1
-      Median window: 5
-      Min Value: 0
-      Name: Image
-      Normalize Range: true
-      Queue Size: 2
-      Transport Hint: raw
-      Value: true
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
@@ -613,55 +787,40 @@ Visualization Manager:
       Hide Inactive Objects: true
     - Class: rviz/MoveCamera
     - Class: rviz/Select
-    - Class: rviz/FocusCamera
-    - Class: rviz/Measure
-    - Class: rviz/SetInitialPose
-      Topic: /initialpose
-    - Class: rviz/SetGoal
-      Topic: /move_base_simple/goal
-    - Class: rviz/PublishPoint
-      Single click: true
-      Topic: /clicked_point
   Value: true
   Views:
     Current:
-      Class: rviz/Orbit
-      Distance: 1.79867
+      Class: rviz/XYOrbit
+      Distance: 1.31315
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.06
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: 0
-        Y: 0
-        Z: 0
+        X: 0.113567
+        Y: 0.10592
+        Z: 2.23518e-07
       Name: Current View
       Near Clip Distance: 0.01
-      Pitch: 0.375398
-      Target Frame: <Fixed Frame>
-      Value: Orbit (rviz)
-      Yaw: 0.0603998
+      Pitch: 0.324797
+      Target Frame: base_link
+      Value: XYOrbit (rviz)
+      Yaw: 0.216756
     Saved: ~
 Window Geometry:
   Displays:
     collapsed: false
   Height: 1028
+  Help:
+    collapsed: false
   Hide Left Dock: false
   Hide Right Dock: false
-  Image:
-    collapsed: false
   Motion Planning:
     collapsed: false
-  QMainWindow State: 000000ff00000000fd0000000400000000000002a20000037afc0200000009fb0000001200530065006c0065006300740069006f006e00000001e10000009b0000006400fffffffb0000001e0054006f006f006c002000500072006f007000650072007400690065007302000001ed000001df00000185000000a3fb000000120056006900650077007300200054006f006f02000001df000002110000018500000122fb000000200054006f006f006c002000500072006f0070006500720074006900650073003203000002880000011d000002210000017afb000000100044006900730070006c006100790073010000002800000194000000dd00fffffffb0000002000730065006c0065006300740069006f006e00200062007500660066006500720200000138000000aa0000023a00000294fb00000014005700690064006500530074006500720065006f02000000e6000000d2000003ee0000030bfb0000000c004b0069006e0065006300740200000186000001060000030c00000261fb0000001e004d006f00740069006f006e00200050006c0061006e006e0069006e006701000001c2000001e00000017400ffffff000000010000010f0000037afc0200000004fb0000001e0054006f006f006c002000500072006f00700065007200740069006500730100000041000000780000000000000000fb0000000a005600690065007700730100000028000002a1000000b000fffffffb0000000a0049006d00610067006501000002cf000000d30000001600fffffffb0000001200530065006c0065006300740069006f006e010000025a000000b200000000000000000000000200000490000000a9fc0100000001fb0000000a00560069006500770073030000004e00000080000002e100000197000000030000073f0000003efc0100000002fb0000000800540069006d006501000000000000073f000002f600fffffffb0000000800540069006d00650100000000000004500000000000000000000003820000037a00000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
-  Selection:
-    collapsed: false
-  Time:
-    collapsed: false
-  Tool Properties:
-    collapsed: false
+  QMainWindow State: 000000ff00000000fd0000000100000000000002a2000003befc0200000005fb000000100044006900730070006c006100790073010000002800000239000000dd00fffffffb0000000800480065006c00700000000342000000bb0000007600fffffffb0000000a0056006900650077007300000003b0000000b0000000b000fffffffb0000000c00430061006d00650072006100000002ff000001610000000000000000fb0000001e004d006f00740069006f006e00200050006c0061006e006e0069006e006701000002670000017f0000017400ffffff0000047c000003be00000001000000020000000100000002fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
   Views:
     collapsed: false
-  Width: 1855
-  X: 79
-  Y: 31
+  Width: 1828
+  X: 62
+  Y: 14
