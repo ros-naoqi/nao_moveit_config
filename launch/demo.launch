@@ -1,5 +1,5 @@
 <launch>
-
+  <arg name="version" value="V40"/>
   <!-- By default, we do not start a database (it can be large) -->
   <arg name="db" default="false" />
 
@@ -9,6 +9,7 @@
   <!-- Load the URDF, SRDF and other .yaml configuration files on the param server -->
   <include file="$(find nao_moveit_config)/launch/planning_context.launch">
     <arg name="load_robot_description" value="true"/>
+    <arg name="version" value="$(arg version)"/>
   </include>
 
   <!-- If needed, broadcast static tf for robot root -->
