@@ -2,6 +2,15 @@
 Changelog for package nao_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* added version argument to every launchfile
+* avoid looping animations
+* fixed moveit.rviz location
+* Merge branch 'master' of github.com:ros-aldebaran/nao_moveit_config
+* fixed robot_description xacro path
+* Contributors: margueda
+
 0.0.1 (2014-09-18)
 ------------------
 * fix typos
