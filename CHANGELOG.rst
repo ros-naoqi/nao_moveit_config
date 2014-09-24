@@ -2,8 +2,8 @@
 Changelog for package nao_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.0.2 (2014-09-24)
+------------------
 * added version argument to every launchfile
 * avoid looping animations
 * fixed moveit.rviz location
