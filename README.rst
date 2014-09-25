@@ -25,9 +25,10 @@ For the dcm and gazebo packages you need to compile the C++ nodes.  In order to 
 
 Then you can run the usual 
 
-''
-caktin_make
-''
+.. code-block:: bash
+
+    catkin_make
+
 And your ready to play with your nao
 
 2. Run MoveIt
@@ -38,9 +39,9 @@ Without robot
 You can run this moveit package either unconnected to any robot or attached to a robot (real or simulated):
 For a standalone execution :
 
-''
+.. code-block:: bash
+
     roslaunch nao_moveit_config demo.launch
-''
 
 On a real nao
 --------------
@@ -48,12 +49,22 @@ To launch it on a real nao you need:
    - nao_dcm (https://github.com/ros-aldebaran/nao_dcm_robot)
    - nao_control (https://github.com/ros-aldebaran/nao_virtual)
 
-''
+First set NAO_IP environment variable to your robot PI address
+
+Modify the bringup configuration file : nao_dcm_bringup/config/nao_dcm.yaml 
+
+Set the rosparam "RobotIP" to your Nao's IP address
+
+.. code-block:: bash
+
     roslaunch nao_dcm_bringup nao_dcm_H25_bringup_remote.launch
-''
-''
+    
+Wait until nao_dcm_bringup is ready then run:
+
+.. code-block:: bash
+
     roslaunch nao_moveit_config moveit_planner.launch
-''
+
 
 On a simulated nao (in gazebo)
 -----------------------------
@@ -61,13 +72,17 @@ To launch it on a gazebo simulated nao you need :
    - nao_dcm (https://github.com/ros-aldebaran/nao_dcm_robot)
    - nao_control (https://github.com/ros-aldebaran/nao_virtual)
    - nao_gazebo_plugin (https://github.com/ros-aldebaran/nao_virtual)
- 
-''
+
+.. code-block:: bash
+
     roslaunch nao_dcm_gazebo nao_dcm_gazebo_H25.launch
-''
-''
+    
+Wait until nao_gazebo is ready then run:
+
+.. code-block:: bash
+
     roslaunch nao_moveit_config moveit_planner.launch
-''
+
 This is based on the work of Konstantinos Chatzilygeroudis: https://github.com/costashatz/nao_dcm.
 
 3 Use Moveit:
