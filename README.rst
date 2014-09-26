@@ -77,7 +77,9 @@ To launch it on a gazebo simulated nao you need :
 
     roslaunch nao_dcm_gazebo nao_dcm_gazebo_H25.launch
     
-Wait until nao_gazebo is ready then run:
+Wait until nao_gazebo is ready then click on the pla button in gazebo.
+
+Finally run:
 
 .. code-block:: bash
 
