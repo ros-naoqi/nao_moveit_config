@@ -10,31 +10,42 @@
     <!--CHAINS: When a chain is specified, all the links along the chain (including endpoints) are included in the group. Additionally, all the joints that are parents to included links are also included. This means that joints along the chain and the parent joint of the base link are included in the group-->
     <!--SUBGROUPS: Groups can also be formed by referencing to already defined group names  -->
 
-    <group name="LeftArm">
+    <group name="arm_left">
 	<chain base_link="torso" tip_link="LForeArm" />
-
     </group>
-    <group name="RightArm">
+    <group name="arm_right">
 	<chain base_link="torso" tip_link="RForeArm" />
     </group>
-    <group name="Head">
+
+    <group name="head">
 	<chain base_link="torso" tip_link="gaze" />
     </group>
-    <group name="LeftLeg">
+    <group name="leg_left">
 	<chain base_link="torso" tip_link="l_sole" />
     </group>
-    <group name="RightLeg">
+    <group name="leg_right">
 	<chain base_link="torso" tip_link="r_sole" />
     </group>
-    <group name="LeftHand">
+    <group name="hand_left">
         <joint name="LWristYaw" />
         <joint name="LHand" /> 
     </group>
-    <group name="RightHand">
+    <group name="hand_right">
         <joint name="RWristYaw" />
-        <joint name="RHand" /> -->
+        <joint name="RHand" /> 
     </group>
+    <group name="arm_hand_left">
+	<chain base_link="torso" tip_link="l_wrist" />
+    </group>
+    <group name="arm_hand_right">
+	<chain base_link="torso" tip_link="r_wrist" />
+    </group>
+
     <!--END EFFECTOR: Purpose: Represent information about an end effector.-->
+<!--    <end_effector name="left_eef" parent_link="l_gripper" group="LeftArmWithHand" />
+    <end_effector name="right_eef" parent_link="r_gripper" group="RightArmWithHand" /> -->
+<!--    <end_effector name="leftarm_eef" parent_link="LForeArm" group="LeftArm" />
+    <end_effector name="rightarm_eef" parent_link="RForeArm" group="RightArm" /> -->
 <!--    <end_effector name="left_eef" parent_link="l_wrist" group="LeftArmWithHand" />
     <end_effector name="right_eef" parent_link="r_wrist" group="RightArmWithHand" />
 -->    <!--VIRTUAL JOINT: Purpose: this element defines a virtual joint between a robot link and an external frame of reference (considered fixed with respect to the robot)-->
