@@ -2,6 +2,17 @@
 Changelog for package nao_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* update README
+* Merge branch 'master' of github.com:ros-nao/nao_moveit_config
+* unify group names to match romeo_moveit_config agreement
+* Update README.rst
+* Update README.rst
+* fixed dependencies and update README
+* Initial tracks.yaml
+* Contributors: Arguedas Mikael, margueda
+
 0.0.2 (2014-09-24)
 ------------------
 * added version argument to every launchfile
