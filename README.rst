@@ -101,7 +101,9 @@ Now you can define your motion by drag and dropping the interactive markers.
 You can compute a trajectory by clicking the 'planning' button 
 Once the motion is satisfying you can try it on your real robot using 'execute' or 'plan and execute'.
 
-NOTE: The start state is not updated automatically, you have to go to 'Select Start State' select 'Current' and click 'Update'. 
+NOTE: The start state is not updated automatically, you have to go to 'Select Start State' select 'Current' and click 'Update'.
+
+ 
 TODO : 
 ------
 Create our own nao_driver/nao_bringup to use moveit with ALMotion
