@@ -2,8 +2,8 @@
 Changelog for package nao_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.0.3 (2014-10-01)
+------------------
 * update README
 * Merge branch 'master' of github.com:ros-nao/nao_moveit_config
 * unify group names to match romeo_moveit_config agreement
