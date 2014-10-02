@@ -26,7 +26,7 @@ or clone the repo in your workspace
 
 .. code-block:: bash
 
-	sudo apt-get install ros-indigo-nao-description
+	sudo apt-get install ros-indigo-nao-meshes
 
 Note : you need to accept the license in the terminal for the package to be installed
 
@@ -137,13 +137,13 @@ Move your robot by drag and dropping the interactive markers.
 
 To compute the trajectory you click on the Plan button
 
-.. image:: Plan.png
+.. image:: plan.png
    :width: 100%
 
 Once the motion is satisfying you can try it on your real robot using 'execute' which is enabled only after a successful planning
 
 
-.. image:: Execute.png
+.. image:: execute.png
    :width: 100%
 
 
