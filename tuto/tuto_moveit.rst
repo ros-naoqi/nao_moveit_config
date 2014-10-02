@@ -48,62 +48,6 @@ Otherwise either you have a lot of error messages and RVIZ doesn't display anyth
    :width: 100%
 
 
-Launch Moveit Rviz plugin
-=======================
-
-Without robot
--------------
-You can run this moveit package either unconnected to any robot or attached to a robot (real or simulated):
-For a standalone execution :
-
-.. code-block:: bash
-
-    roslaunch nao_moveit_config demo.launch
-
-On a real nao
---------------
-To launch it on a real nao you need:
-   - nao_dcm (https://github.com/ros-aldebaran/nao_dcm_robot)
-   - nao_control (https://github.com/ros-aldebaran/nao_virtual)
-
-First set NAO_IP environment variable to your robot PI address
-
-Modify the bringup configuration file : nao_dcm_bringup/config/nao_dcm.yaml 
-
-Set the rosparam "RobotIP" to your Nao's IP address
-
-.. code-block:: bash
-
-    roslaunch nao_dcm_bringup nao_dcm_H25_bringup_remote.launch
-    
-Wait until nao_dcm_bringup is ready then run:
-
-.. code-block:: bash
-
-    roslaunch nao_moveit_config moveit_planner.launch
-
-
-On a simulated nao (in gazebo)
------------------------------
-To launch it on a gazebo simulated nao you need : 
-   - nao_dcm (https://github.com/ros-aldebaran/nao_dcm_robot)
-   - nao_control (https://github.com/ros-aldebaran/nao_virtual)
-   - nao_gazebo_plugin (https://github.com/ros-aldebaran/nao_virtual)
-
-.. code-block:: bash
-
-    roslaunch nao_dcm_gazebo nao_dcm_gazebo_H25.launch
-    
-Wait until nao_gazebo is ready then click on the play button in gazebo.
-
-Finally run:
-
-.. code-block:: bash
-
-    roslaunch nao_moveit_config moveit_planner.launch
-
-This is based on the work of Konstantinos Chatzilygeroudis: https://github.com/costashatz/nao_dcm.
-
 
 Use Moveit
 ==========
@@ -113,6 +57,7 @@ All the following screenshots have been done by launching demo.launch. Everythin
    :width: 100%
 
 First check the box "Allow approximate IK Solutions" on the bottom of the left column.
+We need this option because NAO's arm only has 5 degrees of freedom. This setting is also advised on Romeo. 
 
 .. image:: allow_approximate.png
    :width: 100%
@@ -128,9 +73,9 @@ You can chose the part of the robot you want to move by setting the planning gro
    :width: 100%
 
 Move your robot by drag and dropping the interactive markers.
-- translate the end-effector by moving the arrows
-- rotate the end effector by moving along the circles
-- move the group by moving the blue sphere
+    - translate the end-effector by moving the arrows
+    - rotate the end effector by moving along the circles
+    - move the group by moving the blue sphere
 
 .. image:: moveMarkers.png
    :width: 100%
@@ -152,4 +97,4 @@ In the terminal you can see the status of the trajectory execution. In my case e
    :width: 100%
 
 
-Now you noww everything to play with nao_moveit_config
+Now you know everything to play with nao_moveit_config
