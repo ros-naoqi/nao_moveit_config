@@ -146,5 +146,10 @@ Once the motion is satisfying you can try it on your real robot using 'execute' 
 .. image:: execute.png
    :width: 100%
 
+In the terminal you can see the status of the trajectory execution. In my case everything is ok
+
+.. image:: consoleOutput.png
+   :width: 100%
+
 
 Now you noww everything to play with nao_moveit_config
