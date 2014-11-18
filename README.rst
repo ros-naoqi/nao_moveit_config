@@ -20,6 +20,7 @@ The urdf used for the generation of the configuration files is embedded in this 
 1. Compile the packages
 ===========================
 nao_moveit_config package doesn't need any compilation so running rospack profile should be enough
+NOTE : before running this package please install moveit-simple-controller-manager package. Dependency is missing, this will be fixed in 0.0.4
 
 For the dcm and gazebo packages you need to compile the C++ nodes.  In order to compile nao_dcm packages, you need to set the environment variable AL_DIR to the path to naoqiSDK-c++ on your computer.
 
