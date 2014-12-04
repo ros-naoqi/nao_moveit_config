@@ -2,8 +2,8 @@
 Changelog for package nao_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.0.4 (2014-12-04)
+------------------
 * fixed collision for ankle
 * fixed path to xacro file
 * fixed hand links names
