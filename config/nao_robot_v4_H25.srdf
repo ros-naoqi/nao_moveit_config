@@ -520,5 +520,11 @@
     <disable_collisions link1="l_ankle" link2="r_wrist" reason="Never" />
     <disable_collisions link1="l_ankle" link2="torso" reason="Never" />
     <disable_collisions link1="l_wrist" link2="r_ankle" reason="Never" />
-    <disable_collisions link1="r_ankle" link2="torso" reason="Never" /> 
+    <disable_collisions link1="r_ankle" link2="torso" reason="Never" />
+<!-- ADDITIONAL COLLISION NOT COMPUTED BY MOVEIT ASSISTANT -->
+    <disable_collisions link1="r_ankle" link2="RAnklePitch" reason="Never" />
+    <disable_collisions link1="l_ankle" link2="LAnklePitch" reason="Never" />
+    <disable_collisions link1="RTibia" link2="RAnklePitch" reason="Never" />
+    <disable_collisions link1="LTibia" link2="LAnklePitch" reason="Never" />
+
 </robot>
