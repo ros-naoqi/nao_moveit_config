@@ -2,6 +2,17 @@
 Changelog for package nao_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* fixed collision for ankle
+* fixed path to xacro file
+* fixed hand links names
+* Update README.rst
+  Added note for missing deppendency
+* add missing dependency
+* added moveit tutorial
+* Contributors: Arguedas Mikael, Mikael ARGUEDAS, margueda
+
 0.0.3 (2014-10-01)
 ------------------
 * update README
