@@ -15,11 +15,16 @@ controller_list:
     joints:
       - HeadYaw
       - HeadPitch
+  - name: fake_Pelvis_controller
+    joints:
+      - LHipYawPitch
   - name: fake_LeftLeg_controller
     joints:
       - LHipRoll
       - LHipPitch
       - LKneePitch
+  - name: fake_LeftFoot_controller
+    joints:
       - LAnklePitch
       - LAnkleRoll
   - name: fake_RightLeg_controller
@@ -27,11 +32,10 @@ controller_list:
       - RHipRoll
       - RHipPitch
       - RKneePitch
+  - name: fake_RightFoot_controller
+    joints:
       - RAnklePitch
       - RAnkleRoll
-#  - name: fake_Pelvis_controller
-#    joints:
-#      - LHipYawPitch
   - name: fake_LeftHand_controller
     joints:
       - LWristYaw
@@ -40,60 +44,3 @@ controller_list:
     joints:
       - RWristYaw
       - RHand
-#  - name: fake_LeftArmWithHand_controller
-#    joints:
-#       - LShoulderPitch
-#       - LShoulderRoll
-#       - LElbowYaw
-#       - LElbowRoll
-#       - LWristYaw
-#       - LHand
-#   - name: fake_RightArmWithHand_controller
-#     joints:
-#       - RShoulderPitch
-#       - RShoulderRoll
-#       - RElbowYaw
-#       - RElbowRoll
-#       - RWristYaw
-#       - RHand
-#  - name: fake_EntireBody_controller
-#    joints:
-#      - LHipYawPitch
-#      - LHipRoll
-#      - LHipPitch
-#      - LKneePitch
-#      - LAnklePitch
-#      - LAnkleRoll
-#      - RHipRoll
-#      - RHipPitch
-#      - RKneePitch
-#      - RAnklePitch
-#      - RAnkleRoll
-#      - HeadYaw
-#      - HeadPitch
-#      - LShoulderPitch
-#      - LShoulderRoll
-#      - LElbowYaw
-#      - LElbowRoll
-#      - LWristYaw
-#      - LHand
-#      - RShoulderPitch
-#      - RShoulderRoll
-#      - RElbowYaw
-#      - RElbowRoll
-#      - RWristYaw
-#      - RHand
-#  - name: fake_left_endeffector_controller
-#    joints:
-#      - LHand
-#  - name: fake_right_endeffector_controller
-#    joints:
-#      - RHand
-#  - name: fake_right_foot_effector_controller
-#    joints:
-#      - RAnklePitch
-#      - RAnkleRoll
-#  - name: fake_left_foot_effector_controller
-#    joints:
-#      - LAnklePitch
-#      - LAnkleRoll
