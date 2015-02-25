@@ -1,13 +1,8 @@
 <?xml version="1.0"?>
 <launch>
     <arg name="version" value="V40"/>
-    <!-- Call Nao Robot publisher -->
-    <include file="$(find nao_description)/launch/nao_desc_generated.launch">
-        <arg name="version" value="$(arg version)"/>
-    </include>
 	
     <!-- Start move_group -->
-
  	<include file="$(find nao_moveit_config)/launch/move_group.launch">
  		<arg name="publish_monitored_planning_scene" value="true" />
 	</include>
