@@ -1,0 +1,8 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: nao_description
+    relative_path: urdf/naoV40_generated_urdf/nao.urdf
+  SRDF:
+    relative_path: config/nao_robot_v4_H25.srdf
+  CONFIG:
+    generated_timestamp: 1383057958
