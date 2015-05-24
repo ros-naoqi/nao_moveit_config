@@ -2,6 +2,15 @@
 Changelog for package nao_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* install the .setup_assistant file for potential introspection
+* remove the URDF and fix the README
+* add a .setup_assistant
+* Added foot and pelvis fake controllers
+* Added foot and pelvis controllers
+* Contributors: Arguedas Mikael, Konstantinos Chatzilygeroudis, Vincent Rabaud
+
 0.0.4 (2014-12-04)
 ------------------
 * fixed collision for ankle
