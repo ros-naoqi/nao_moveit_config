@@ -12,15 +12,13 @@ The moveit package must be run on a remote computer and not directly on your rob
 URDF and Textures used
 ======================
 
-This moveit package is based on a textured nao :
-https://github.com/vrabaud/nao_meshes_generator
+This moveit package is based on a textured nao: https://github.com/ros-naoqi/nao_meshes
 
-The urdf used for the generation of the configuration files is embedded in this package. It's the same that the one in nao_description : https://github.com/keulYSMB/nao_robot/tree/devel/nao_description/urdf/naoV40_generated_urdf/nao.urdf
+The urdf used for the generation of the configuration files is at: https://github.com/ros-naoqi/nao_robot
 
 1. Compile the packages
-===========================
+=======================
 nao_moveit_config package doesn't need any compilation so running rospack profile should be enough
-NOTE : before running this package please install moveit-simple-controller-manager package. Dependency is missing, this will be fixed in 0.0.4
 
 For the dcm and gazebo packages you need to compile the C++ nodes.  In order to compile nao_dcm packages, you need to set the environment variable AL_DIR to the path to naoqiSDK-c++ on your computer.
 
@@ -45,7 +43,7 @@ For a standalone execution :
     roslaunch nao_moveit_config demo.launch
 
 On a real nao
---------------
+-------------
 To launch it on a real nao you need:
    - nao_dcm (https://github.com/ros-aldebaran/nao_dcm_robot)
    - nao_control (https://github.com/ros-aldebaran/nao_virtual)
@@ -68,7 +66,7 @@ Wait until nao_dcm_bringup is ready then run:
 
 
 On a simulated nao (in gazebo)
------------------------------
+------------------------------
 To launch it on a gazebo simulated nao you need : 
    - nao_dcm (https://github.com/ros-aldebaran/nao_dcm_robot)
    - nao_control (https://github.com/ros-aldebaran/nao_virtual)
