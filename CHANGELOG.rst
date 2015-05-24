@@ -2,8 +2,8 @@
 Changelog for package nao_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.0.5 (2015-05-25)
+------------------
 * install the .setup_assistant file for potential introspection
 * remove the URDF and fix the README
 * add a .setup_assistant
