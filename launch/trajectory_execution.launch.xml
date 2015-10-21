@@ -12,7 +12,7 @@
   <param name="allowed_goal_duration_margin" value="2"/> <!-- default 0.5 -->
   
   <!-- Load the robot specific controller manager; this sets the moveit_controller_manager ROS parameter -->
-  <arg name="moveit_controller_manager" default="nao_robot_v4_H25" />
+  <arg name="moveit_controller_manager" default="NaoH25V40" />
   <include file="$(find nao_moveit_config)/launch/$(arg moveit_controller_manager)_moveit_controller_manager.launch.xml" />
   
 </launch>
