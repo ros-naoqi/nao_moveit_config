@@ -5,12 +5,12 @@
   <!-- The name of the parameter under which the URDF is loaded -->
   <arg name="robot_description" default="robot_description"/>
   <arg name="version" default="V40"/>
-
+  
   <!-- Load universal robot description format (URDF) -->
   <param if="$(arg load_robot_description)" name="$(arg robot_description)" command="$(find xacro)/xacro.py '$(find nao_description)/urdf/nao$(arg version)_generated_urdf/nao_robot.xacro'"/>
   <!-- The semantic description that corresponds to the URDF -->
-  <param name="$(arg robot_description)_semantic" textfile="$(find nao_moveit_config)/config/nao_robot_v4_H25.srdf" />
-
+  <param name="$(arg robot_description)_semantic" textfile="$(find nao_moveit_config)/config/NaoH25V40.srdf" />
+  
   <!-- Load updated joint limits (override information from URDF) -->
   <group ns="$(arg robot_description)_planning">
     <rosparam command="load" file="$(find nao_moveit_config)/config/joint_limits.yaml"/>
@@ -20,5 +20,5 @@
   <group ns="$(arg robot_description)_kinematics">
     <rosparam command="load" file="$(find nao_moveit_config)/config/kinematics.yaml"/>
   </group>
-
+  
 </launch>
