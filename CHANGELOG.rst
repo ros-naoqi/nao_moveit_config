@@ -2,8 +2,8 @@
 Changelog for package nao_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.0.6 (2015-10-21)
+------------------
 * updating the readme
 * fixing the config for the most recent urdf
 * add myself as a maintainer
