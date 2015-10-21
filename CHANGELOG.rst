@@ -2,6 +2,16 @@
 Changelog for package nao_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* updating the readme
+* fixing the config for the most recent urdf
+* add myself as a maintainer
+* Contributors: Vincent Rabaud, nlyubova
+
+* add myself as a maintainer
+* Contributors: Vincent Rabaud
+
 0.0.5 (2015-05-25)
 ------------------
 * install the .setup_assistant file for potential introspection
