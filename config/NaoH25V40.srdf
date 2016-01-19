@@ -32,9 +32,6 @@
         <link name="LFinger22_link" />
         <link name="LFinger23_link" />
         <link name="l_gripper" />
-        <link name="LHandTouchBack_frame" />
-        <link name="LHandTouchLeft_frame" />
-        <link name="LHandTouchRight_frame" />
         <link name="LThumb1_link" />
         <link name="LThumb2_link" />
         <joint name="LHand" />
@@ -47,9 +44,6 @@
         <link name="RFinger22_link" />
         <link name="RFinger23_link" />
         <link name="r_gripper" />
-        <link name="RHandTouchBack_frame" />
-        <link name="RHandTouchLeft_frame" />
-        <link name="RHandTouchRight_frame" />
         <link name="RThumb1_link" />
         <link name="RThumb2_link" />
         <joint name="RHand" />
@@ -88,12 +82,16 @@
     <passive_joint name="RThumb2" />
     <passive_joint name="virtual_joint" />
     <!--DISABLE COLLISIONS: By default it is assumed that any link of the robot could potentially come into collision with any other link in the robot. This tag disables collision checking between a specified pair of links. -->
+    <disable_collisions link1="Head" link2="LBicep" reason="Default" />
+    <disable_collisions link1="Head" link2="l_sole" reason="Never" />
     <disable_collisions link1="Head" link2="LAnklePitch" reason="Never" />
     <disable_collisions link1="Head" link2="LHip" reason="Never" />
     <disable_collisions link1="Head" link2="LPelvis" reason="Never" />
+    <disable_collisions link1="Head" link2="LShoulder" reason="Default" />
     <disable_collisions link1="Head" link2="LThigh" reason="Never" />
     <disable_collisions link1="Head" link2="LTibia" reason="Never" />
     <disable_collisions link1="Head" link2="Neck" reason="Adjacent" />
+    <disable_collisions link1="Head" link2="r_sole" reason="Never" />
     <disable_collisions link1="Head" link2="RAnklePitch" reason="Never" />
     <disable_collisions link1="Head" link2="RHip" reason="Never" />
     <disable_collisions link1="Head" link2="RPelvis" reason="Never" />
@@ -101,6 +99,7 @@
     <disable_collisions link1="Head" link2="RTibia" reason="Never" />
     <disable_collisions link1="Head" link2="l_ankle" reason="Never" />
     <disable_collisions link1="Head" link2="r_ankle" reason="Never" />
+    <disable_collisions link1="Head" link2="torso" reason="Default" />
     <disable_collisions link1="LAnklePitch" link2="LBicep" reason="Never" />
     <disable_collisions link1="LAnklePitch" link2="LHip" reason="Never" />
     <disable_collisions link1="LAnklePitch" link2="LShoulder" reason="Never" />
@@ -133,11 +132,13 @@
     <disable_collisions link1="LBicep" link2="LHip" reason="Never" />
     <disable_collisions link1="LBicep" link2="LPelvis" reason="Never" />
     <disable_collisions link1="LBicep" link2="LShoulder" reason="Adjacent" />
+    <disable_collisions link1="LBicep" link2="LThigh" reason="Never" />
     <disable_collisions link1="LBicep" link2="LThumb1_link" reason="Never" />
     <disable_collisions link1="LBicep" link2="LThumb2_link" reason="Never" />
     <disable_collisions link1="LBicep" link2="Neck" reason="Never" />
     <disable_collisions link1="LBicep" link2="RAnklePitch" reason="Never" />
     <disable_collisions link1="LBicep" link2="RBicep" reason="Never" />
+    <disable_collisions link1="LBicep" link2="r_sole" reason="Never" />
     <disable_collisions link1="LBicep" link2="RFinger11_link" reason="Never" />
     <disable_collisions link1="LBicep" link2="RFinger12_link" reason="Never" />
     <disable_collisions link1="LBicep" link2="RFinger13_link" reason="Never" />
@@ -152,10 +153,28 @@
     <disable_collisions link1="LBicep" link2="RThumb1_link" reason="Never" />
     <disable_collisions link1="LBicep" link2="RThumb2_link" reason="Never" />
     <disable_collisions link1="LBicep" link2="RTibia" reason="Never" />
+    <disable_collisions link1="LBicep" link2="l_ankle" reason="Never" />
     <disable_collisions link1="LBicep" link2="l_wrist" reason="Never" />
     <disable_collisions link1="LBicep" link2="r_ankle" reason="Never" />
     <disable_collisions link1="LBicep" link2="r_wrist" reason="Never" />
     <disable_collisions link1="LBicep" link2="torso" reason="Default" />
+<!--
+     Added By Hand
+-->
+    <disable_collisions link1="l_wrist" link2="r_wrist" reason="Default" />
+
+    <disable_collisions link1="l_sole" link2="LShoulder" reason="Never" />
+    <disable_collisions link1="l_sole" link2="Neck" reason="Never" />
+    <disable_collisions link1="l_sole" link2="RBicep" reason="Never" />
+    <disable_collisions link1="l_sole" link2="RFinger11_link" reason="Never" />
+    <disable_collisions link1="l_sole" link2="RFinger21_link" reason="Never" />
+    <disable_collisions link1="l_sole" link2="RFinger22_link" reason="Never" />
+    <disable_collisions link1="l_sole" link2="RForeArm" reason="Never" />
+    <disable_collisions link1="l_sole" link2="RShoulder" reason="Never" />
+    <disable_collisions link1="l_sole" link2="RThumb1_link" reason="Never" />
+    <disable_collisions link1="l_sole" link2="RThumb2_link" reason="Never" />
+    <disable_collisions link1="l_sole" link2="l_ankle" reason="Adjacent" />
+    <disable_collisions link1="l_sole" link2="r_wrist" reason="Never" />
     <disable_collisions link1="LFinger11_link" link2="LFinger12_link" reason="Adjacent" />
     <disable_collisions link1="LFinger11_link" link2="LFinger13_link" reason="Never" />
     <disable_collisions link1="LFinger11_link" link2="LFinger21_link" reason="Never" />
@@ -168,6 +187,9 @@
     <disable_collisions link1="LFinger11_link" link2="Neck" reason="Never" />
     <disable_collisions link1="LFinger11_link" link2="RAnklePitch" reason="Never" />
     <disable_collisions link1="LFinger11_link" link2="RBicep" reason="Never" />
+    <disable_collisions link1="LFinger11_link" link2="r_sole" reason="Never" />
+    <disable_collisions link1="LFinger11_link" link2="RFinger12_link" reason="Never" />
+    <disable_collisions link1="LFinger11_link" link2="RFinger13_link" reason="Never" />
     <disable_collisions link1="LFinger11_link" link2="RFinger21_link" reason="Never" />
     <disable_collisions link1="LFinger11_link" link2="RFinger22_link" reason="Never" />
     <disable_collisions link1="LFinger11_link" link2="RFinger23_link" reason="Never" />
@@ -188,10 +210,12 @@
     <disable_collisions link1="LFinger12_link" link2="LThumb1_link" reason="Never" />
     <disable_collisions link1="LFinger12_link" link2="LThumb2_link" reason="Never" />
     <disable_collisions link1="LFinger12_link" link2="Neck" reason="Never" />
+    <disable_collisions link1="LFinger12_link" link2="r_sole" reason="Never" />
     <disable_collisions link1="LFinger12_link" link2="RAnklePitch" reason="Never" />
     <disable_collisions link1="LFinger12_link" link2="RBicep" reason="Never" />
     <disable_collisions link1="LFinger12_link" link2="RFinger11_link" reason="Never" />
     <disable_collisions link1="LFinger12_link" link2="RFinger12_link" reason="Never" />
+    <disable_collisions link1="LFinger12_link" link2="RFinger13_link" reason="Never" />
     <disable_collisions link1="LFinger12_link" link2="RFinger21_link" reason="Never" />
     <disable_collisions link1="LFinger12_link" link2="RFinger22_link" reason="Never" />
     <disable_collisions link1="LFinger12_link" link2="RFinger23_link" reason="Never" />
@@ -210,6 +234,8 @@
     <disable_collisions link1="LFinger13_link" link2="LThumb1_link" reason="Never" />
     <disable_collisions link1="LFinger13_link" link2="LThumb2_link" reason="Never" />
     <disable_collisions link1="LFinger13_link" link2="Neck" reason="Never" />
+    <disable_collisions link1="LFinger13_link" link2="r_sole" reason="Never" />
+    <disable_collisions link1="LFinger13_link" link2="RFinger13_link" reason="Never" />
     <disable_collisions link1="LFinger13_link" link2="RAnklePitch" reason="Never" />
     <disable_collisions link1="LFinger13_link" link2="RBicep" reason="Never" />
     <disable_collisions link1="LFinger13_link" link2="RFinger11_link" reason="Never" />
@@ -221,6 +247,7 @@
     <disable_collisions link1="LFinger13_link" link2="RShoulder" reason="Never" />
     <disable_collisions link1="LFinger13_link" link2="RThumb1_link" reason="Never" />
     <disable_collisions link1="LFinger13_link" link2="RThumb2_link" reason="Never" />
+    <disable_collisions link1="LFinger13_link" link2="RTibia" reason="Never" />
     <disable_collisions link1="LFinger13_link" link2="l_wrist" reason="Never" />
     <disable_collisions link1="LFinger13_link" link2="r_ankle" reason="Never" />
     <disable_collisions link1="LFinger21_link" link2="LFinger22_link" reason="Adjacent" />
@@ -232,9 +259,11 @@
     <disable_collisions link1="LFinger21_link" link2="Neck" reason="Never" />
     <disable_collisions link1="LFinger21_link" link2="RAnklePitch" reason="Never" />
     <disable_collisions link1="LFinger21_link" link2="RBicep" reason="Never" />
+    <disable_collisions link1="LFinger21_link" link2="r_sole" reason="Never" />
     <disable_collisions link1="LFinger21_link" link2="RFinger11_link" reason="Never" />
     <disable_collisions link1="LFinger21_link" link2="RFinger12_link" reason="Never" />
     <disable_collisions link1="LFinger21_link" link2="RFinger13_link" reason="Never" />
+    <disable_collisions link1="LFinger21_link" link2="RFinger21_link" reason="Never" />
     <disable_collisions link1="LFinger21_link" link2="RFinger22_link" reason="Never" />
     <disable_collisions link1="LFinger21_link" link2="RFinger23_link" reason="Never" />
     <disable_collisions link1="LFinger21_link" link2="RForeArm" reason="Never" />
@@ -252,11 +281,14 @@
     <disable_collisions link1="LFinger22_link" link2="LThumb1_link" reason="Never" />
     <disable_collisions link1="LFinger22_link" link2="LThumb2_link" reason="Default" />
     <disable_collisions link1="LFinger22_link" link2="Neck" reason="Never" />
+    <disable_collisions link1="LFinger22_link" link2="r_sole" reason="Never" />
     <disable_collisions link1="LFinger22_link" link2="RAnklePitch" reason="Never" />
     <disable_collisions link1="LFinger22_link" link2="RBicep" reason="Never" />
     <disable_collisions link1="LFinger22_link" link2="RFinger11_link" reason="Never" />
     <disable_collisions link1="LFinger22_link" link2="RFinger12_link" reason="Never" />
     <disable_collisions link1="LFinger22_link" link2="RFinger13_link" reason="Never" />
+    <disable_collisions link1="LFinger22_link" link2="RFinger21_link" reason="Never" />
+    <disable_collisions link1="LFinger22_link" link2="RFinger22_link" reason="Never" />
     <disable_collisions link1="LFinger22_link" link2="RFinger23_link" reason="Never" />
     <disable_collisions link1="LFinger22_link" link2="RForeArm" reason="Never" />
     <disable_collisions link1="LFinger22_link" link2="RHip" reason="Never" />
@@ -271,6 +303,7 @@
     <disable_collisions link1="LFinger23_link" link2="LThumb1_link" reason="Default" />
     <disable_collisions link1="LFinger23_link" link2="LThumb2_link" reason="Default" />
     <disable_collisions link1="LFinger23_link" link2="Neck" reason="Never" />
+    <disable_collisions link1="LFinger23_link" link2="r_sole" reason="Never" />
     <disable_collisions link1="LFinger23_link" link2="RAnklePitch" reason="Never" />
     <disable_collisions link1="LFinger23_link" link2="RBicep" reason="Never" />
     <disable_collisions link1="LFinger23_link" link2="RFinger13_link" reason="Never" />
@@ -281,14 +314,17 @@
     <disable_collisions link1="LFinger23_link" link2="RShoulder" reason="Never" />
     <disable_collisions link1="LFinger23_link" link2="RThumb1_link" reason="Never" />
     <disable_collisions link1="LFinger23_link" link2="RThumb2_link" reason="Never" />
+    <disable_collisions link1="LFinger23_link" link2="RTibia" reason="Never" />
     <disable_collisions link1="LFinger23_link" link2="l_wrist" reason="Never" />
     <disable_collisions link1="LFinger23_link" link2="r_ankle" reason="Never" />
+    <disable_collisions link1="LForeArm" link2="LHip" reason="Never" />
     <disable_collisions link1="LForeArm" link2="LShoulder" reason="Never" />
     <disable_collisions link1="LForeArm" link2="LThumb1_link" reason="Never" />
     <disable_collisions link1="LForeArm" link2="LThumb2_link" reason="Never" />
     <disable_collisions link1="LForeArm" link2="Neck" reason="Never" />
     <disable_collisions link1="LForeArm" link2="RAnklePitch" reason="Never" />
     <disable_collisions link1="LForeArm" link2="RBicep" reason="Never" />
+    <disable_collisions link1="LForeArm" link2="r_sole" reason="Never" />
     <disable_collisions link1="LForeArm" link2="RFinger11_link" reason="Never" />
     <disable_collisions link1="LForeArm" link2="RFinger21_link" reason="Never" />
     <disable_collisions link1="LForeArm" link2="RFinger22_link" reason="Never" />
@@ -310,6 +346,7 @@
     <disable_collisions link1="LHip" link2="Neck" reason="Never" />
     <disable_collisions link1="LHip" link2="RAnklePitch" reason="Never" />
     <disable_collisions link1="LHip" link2="RBicep" reason="Never" />
+    <disable_collisions link1="LHip" link2="r_sole" reason="Never" />
     <disable_collisions link1="LHip" link2="RFinger11_link" reason="Never" />
     <disable_collisions link1="LHip" link2="RFinger21_link" reason="Never" />
     <disable_collisions link1="LHip" link2="RForeArm" reason="Never" />
@@ -318,6 +355,9 @@
     <disable_collisions link1="LHip" link2="RShoulder" reason="Never" />
     <disable_collisions link1="LHip" link2="RThigh" reason="Never" />
     <disable_collisions link1="LHip" link2="RThumb1_link" reason="Never" />
+    <disable_collisions link1="LHip" link2="RTibia" reason="Never" />
+    <disable_collisions link1="LHip" link2="l_ankle" reason="Never" />
+    <disable_collisions link1="LHip" link2="r_ankle" reason="Never" />
     <disable_collisions link1="LHip" link2="RThumb2_link" reason="Never" />
     <disable_collisions link1="LHip" link2="r_wrist" reason="Never" />
     <disable_collisions link1="LHip" link2="torso" reason="Never" />
@@ -326,11 +366,16 @@
     <disable_collisions link1="LPelvis" link2="LTibia" reason="Never" />
     <disable_collisions link1="LPelvis" link2="Neck" reason="Never" />
     <disable_collisions link1="LPelvis" link2="RBicep" reason="Never" />
+    <disable_collisions link1="LPelvis" link2="RFinger21_link" reason="Never" />
     <disable_collisions link1="LPelvis" link2="RForeArm" reason="Never" />
     <disable_collisions link1="LPelvis" link2="RHip" reason="Never" />
     <disable_collisions link1="LPelvis" link2="RPelvis" reason="Never" />
     <disable_collisions link1="LPelvis" link2="RShoulder" reason="Never" />
     <disable_collisions link1="LPelvis" link2="RThigh" reason="Never" />
+    <disable_collisions link1="LPelvis" link2="RThumb1_link" reason="Never" />
+    <disable_collisions link1="LPelvis" link2="RThumb2_link" reason="Never" />
+    <disable_collisions link1="LPelvis" link2="RTibia" reason="Never" />
+    <disable_collisions link1="LPelvis" link2="r_ankle" reason="Never" />
     <disable_collisions link1="LPelvis" link2="torso" reason="Adjacent" />
     <disable_collisions link1="LShoulder" link2="LThigh" reason="Never" />
     <disable_collisions link1="LShoulder" link2="LThumb1_link" reason="Never" />
@@ -339,6 +384,7 @@
     <disable_collisions link1="LShoulder" link2="Neck" reason="Never" />
     <disable_collisions link1="LShoulder" link2="RAnklePitch" reason="Never" />
     <disable_collisions link1="LShoulder" link2="RBicep" reason="Never" />
+    <disable_collisions link1="LShoulder" link2="r_sole" reason="Never" />
     <disable_collisions link1="LShoulder" link2="RFinger11_link" reason="Never" />
     <disable_collisions link1="LShoulder" link2="RFinger12_link" reason="Never" />
     <disable_collisions link1="LShoulder" link2="RFinger13_link" reason="Never" />
@@ -365,11 +411,15 @@
     <disable_collisions link1="LThigh" link2="RHip" reason="Never" />
     <disable_collisions link1="LThigh" link2="RPelvis" reason="Never" />
     <disable_collisions link1="LThigh" link2="RShoulder" reason="Never" />
+    <disable_collisions link1="LThigh" link2="RThigh" reason="Default" />
+    <disable_collisions link1="LThigh" link2="l_ankle" reason="Never" />
+    <disable_collisions link1="LThigh" link2="torso" reason="Default" />
     <disable_collisions link1="LThigh" link2="RThumb1_link" reason="Never" />
     <disable_collisions link1="LThumb1_link" link2="LThumb2_link" reason="Adjacent" />
     <disable_collisions link1="LThumb1_link" link2="Neck" reason="Never" />
     <disable_collisions link1="LThumb1_link" link2="RAnklePitch" reason="Never" />
     <disable_collisions link1="LThumb1_link" link2="RBicep" reason="Never" />
+    <disable_collisions link1="LThumb1_link" link2="r_sole" reason="Never" />
     <disable_collisions link1="LThumb1_link" link2="RFinger11_link" reason="Never" />
     <disable_collisions link1="LThumb1_link" link2="RFinger12_link" reason="Never" />
     <disable_collisions link1="LThumb1_link" link2="RFinger13_link" reason="Never" />
@@ -387,7 +437,11 @@
     <disable_collisions link1="LThumb2_link" link2="Neck" reason="Never" />
     <disable_collisions link1="LThumb2_link" link2="RAnklePitch" reason="Never" />
     <disable_collisions link1="LThumb2_link" link2="RBicep" reason="Never" />
+    <disable_collisions link1="LThumb2_link" link2="r_sole" reason="Never" />
+    <disable_collisions link1="LThumb2_link" link2="RFinger11_link" reason="Never" />
     <disable_collisions link1="LThumb2_link" link2="RFinger12_link" reason="Never" />
+    <disable_collisions link1="LThumb2_link" link2="RFinger13_link" reason="Never" />
+    <disable_collisions link1="LThumb2_link" link2="RFinger21_link" reason="Never" />
     <disable_collisions link1="LThumb2_link" link2="RFinger23_link" reason="Never" />
     <disable_collisions link1="LThumb2_link" link2="RForeArm" reason="Never" />
     <disable_collisions link1="LThumb2_link" link2="RHip" reason="Never" />
@@ -409,11 +463,14 @@
     <disable_collisions link1="LTibia" link2="RShoulder" reason="Never" />
     <disable_collisions link1="LTibia" link2="RThumb1_link" reason="Never" />
     <disable_collisions link1="LTibia" link2="RThumb2_link" reason="Never" />
+    <disable_collisions link1="LTibia" link2="RTibia" reason="Default" />
     <disable_collisions link1="LTibia" link2="l_ankle" reason="Default" />
+    <disable_collisions link1="LTibia" link2="l_sole" reason="Never" />
     <disable_collisions link1="LTibia" link2="r_wrist" reason="Never" />
     <disable_collisions link1="LTibia" link2="torso" reason="Never" />
     <disable_collisions link1="Neck" link2="RAnklePitch" reason="Never" />
     <disable_collisions link1="Neck" link2="RBicep" reason="Never" />
+    <disable_collisions link1="Neck" link2="r_sole" reason="Never" />
     <disable_collisions link1="Neck" link2="RFinger11_link" reason="Never" />
     <disable_collisions link1="Neck" link2="RFinger12_link" reason="Never" />
     <disable_collisions link1="Neck" link2="RFinger13_link" reason="Never" />
@@ -451,13 +508,33 @@
     <disable_collisions link1="RBicep" link2="RHip" reason="Never" />
     <disable_collisions link1="RBicep" link2="RPelvis" reason="Never" />
     <disable_collisions link1="RBicep" link2="RShoulder" reason="Adjacent" />
+    <disable_collisions link1="RBicep" link2="RThigh" reason="Never" />
     <disable_collisions link1="RBicep" link2="RThumb1_link" reason="Never" />
     <disable_collisions link1="RBicep" link2="RThumb2_link" reason="Never" />
-    <disable_collisions link1="RBicep" link2="l_ankle" reason="Never" />
+    <disable_collisions link1="RBicep" link2="Neck" reason="Never" />
+    <disable_collisions link1="RBicep" link2="LBicep" reason="Never" />
+    <disable_collisions link1="RBicep" link2="l_sole" reason="Never" />
     <disable_collisions link1="RBicep" link2="l_wrist" reason="Never" />
+    <disable_collisions link1="RBicep" link2="LFinger11_link" reason="Never" />
+    <disable_collisions link1="RBicep" link2="LFinger21_link" reason="Never" />
+    <disable_collisions link1="RBicep" link2="LFinger22_link" reason="Never" />
+    <disable_collisions link1="RBicep" link2="LFinger23_link" reason="Never" />
+    <disable_collisions link1="RBicep" link2="LForeArm" reason="Never" />
+    <disable_collisions link1="RBicep" link2="LHip" reason="Never" />
+    <disable_collisions link1="RBicep" link2="LPelvis" reason="Never" />
+    <disable_collisions link1="RBicep" link2="LShoulder" reason="Never" />
+    <disable_collisions link1="RBicep" link2="LThigh" reason="Never" />
+    <disable_collisions link1="RBicep" link2="LThumb1_link" reason="Never" />
+    <disable_collisions link1="RBicep" link2="LThumb2_link" reason="Never" />
+    <disable_collisions link1="RBicep" link2="LTibia" reason="Never" />
     <disable_collisions link1="RBicep" link2="r_ankle" reason="Never" />
     <disable_collisions link1="RBicep" link2="r_wrist" reason="Never" />
+    <disable_collisions link1="RBicep" link2="l_ankle" reason="Never" />
     <disable_collisions link1="RBicep" link2="torso" reason="Default" />
+    <disable_collisions link1="r_sole" link2="RShoulder" reason="Never" />
+    <disable_collisions link1="r_sole" link2="l_wrist" reason="Never" />
+    <disable_collisions link1="r_sole" link2="r_ankle" reason="Adjacent" />
+    <disable_collisions link1="r_sole" link2="torso" reason="Never" />
     <disable_collisions link1="RFinger11_link" link2="RFinger12_link" reason="Adjacent" />
     <disable_collisions link1="RFinger11_link" link2="RFinger13_link" reason="Never" />
     <disable_collisions link1="RFinger11_link" link2="RFinger21_link" reason="Never" />
@@ -507,22 +584,27 @@
     <disable_collisions link1="RFinger23_link" link2="RShoulder" reason="Never" />
     <disable_collisions link1="RFinger23_link" link2="RThumb1_link" reason="Default" />
     <disable_collisions link1="RFinger23_link" link2="RThumb2_link" reason="Default" />
+    <disable_collisions link1="RFinger23_link" link2="l_ankle" reason="Never" />
     <disable_collisions link1="RFinger23_link" link2="r_wrist" reason="Never" />
     <disable_collisions link1="RForeArm" link2="RHip" reason="Never" />
     <disable_collisions link1="RForeArm" link2="RShoulder" reason="Never" />
     <disable_collisions link1="RForeArm" link2="RThumb1_link" reason="Never" />
     <disable_collisions link1="RForeArm" link2="RThumb2_link" reason="Never" />
     <disable_collisions link1="RForeArm" link2="l_ankle" reason="Never" />
+    <disable_collisions link1="RForeArm" link2="l_wrist" reason="Never" />
     <disable_collisions link1="RForeArm" link2="r_wrist" reason="Adjacent" />
     <disable_collisions link1="RHip" link2="RPelvis" reason="Adjacent" />
     <disable_collisions link1="RHip" link2="RShoulder" reason="Never" />
     <disable_collisions link1="RHip" link2="RThigh" reason="Adjacent" />
     <disable_collisions link1="RHip" link2="RTibia" reason="Never" />
+    <disable_collisions link1="RHip" link2="l_ankle" reason="Never" />
+    <disable_collisions link1="RHip" link2="r_ankle" reason="Never" />
     <disable_collisions link1="RHip" link2="l_wrist" reason="Never" />
     <disable_collisions link1="RHip" link2="torso" reason="Never" />
     <disable_collisions link1="RPelvis" link2="RShoulder" reason="Never" />
     <disable_collisions link1="RPelvis" link2="RThigh" reason="Default" />
     <disable_collisions link1="RPelvis" link2="RTibia" reason="Never" />
+    <disable_collisions link1="RPelvis" link2="l_ankle" reason="Never" />
     <disable_collisions link1="RPelvis" link2="torso" reason="Adjacent" />
     <disable_collisions link1="RShoulder" link2="RThigh" reason="Never" />
     <disable_collisions link1="RShoulder" link2="RThumb1_link" reason="Never" />
@@ -534,6 +616,8 @@
     <disable_collisions link1="RShoulder" link2="r_wrist" reason="Never" />
     <disable_collisions link1="RShoulder" link2="torso" reason="Adjacent" />
     <disable_collisions link1="RThigh" link2="RTibia" reason="Adjacent" />
+    <disable_collisions link1="RThigh" link2="l_ankle" reason="Never" />
+    <disable_collisions link1="RThigh" link2="r_ankle" reason="Never" />
     <disable_collisions link1="RThumb1_link" link2="RThumb2_link" reason="Adjacent" />
     <disable_collisions link1="RThumb1_link" link2="l_ankle" reason="Never" />
     <disable_collisions link1="RThumb1_link" link2="r_wrist" reason="Adjacent" />
@@ -541,10 +625,17 @@
     <disable_collisions link1="RThumb2_link" link2="r_wrist" reason="Never" />
     <disable_collisions link1="RTibia" link2="l_wrist" reason="Never" />
     <disable_collisions link1="RTibia" link2="r_ankle" reason="Default" />
+    <disable_collisions link1="RTibia" link2="r_sole" reason="Adjacent" />
     <disable_collisions link1="RTibia" link2="torso" reason="Never" />
     <disable_collisions link1="l_ankle" link2="r_wrist" reason="Never" />
     <disable_collisions link1="l_ankle" link2="torso" reason="Never" />
     <disable_collisions link1="l_wrist" link2="r_ankle" reason="Never" />
     <disable_collisions link1="l_wrist" link2="r_wrist" reason="Default" />
     <disable_collisions link1="r_ankle" link2="torso" reason="Never" />
+<!-- ADDITIONAL COLLISION NOT COMPUTED BY MOVEIT ASSISTANT -->
+    <disable_collisions link1="r_ankle" link2="RAnklePitch" reason="Never" />
+    <disable_collisions link1="l_ankle" link2="LAnklePitch" reason="Never" />
+    <disable_collisions link1="RTibia" link2="RAnklePitch" reason="Never" />
+    <disable_collisions link1="LTibia" link2="LAnklePitch" reason="Never" />
+
 </robot>
