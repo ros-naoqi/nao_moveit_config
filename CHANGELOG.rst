@@ -2,6 +2,19 @@
 Changelog for package nao_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* homogenize group names to match side_bodyChain
+* added end effectors for legs
+* update collision matrix: fix collision on NAO's feet
+* rename demo_real.launch into moveit_planner.launch to match tutorials
+* Merge pull request `#9 <https://github.com/ros-naoqi/nao_moveit_config/issues/9>`_ from nlyubova/master
+  missing collisions
+* fixing srdf, adding missing collisions
+* fixing the projection_evaluator joints for hand groups
+* added demo_real.launch from nlyubova's fork
+* Contributors: Mikael Arguedas, Vincent Rabaud, nlyubova
+
 0.0.6 (2015-10-21)
 ------------------
 * updating the readme
