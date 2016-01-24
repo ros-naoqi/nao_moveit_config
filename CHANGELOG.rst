@@ -2,8 +2,8 @@
 Changelog for package nao_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.0.7 (2016-01-23)
+------------------
 * homogenize group names to match side_bodyChain
 * added end effectors for legs
 * update collision matrix: fix collision on NAO's feet
