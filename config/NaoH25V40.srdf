@@ -16,12 +16,12 @@
         <chain base_link="torso" tip_link="r_wrist" />
     </group>
     <group name="head">
-        <chain base_link="torso" tip_link="Head" />
+        <chain base_link="torso" tip_link="gaze" />
     </group>
-    <group name="leg_left">
+    <group name="left_leg">
         <chain base_link="LHip" tip_link="l_sole" />
     </group>
-    <group name="leg_right">
+    <group name="right_leg">
         <chain base_link="RHip" tip_link="r_sole" />
     </group>
     <group name="left_hand">
@@ -48,10 +48,10 @@
         <link name="RThumb2_link" />
         <joint name="RHand" />
     </group>
-    <group name="arm_hand_left">
+    <group name="left_arm_hand">
         <chain base_link="torso" tip_link="l_wrist" />
     </group>
-    <group name="arm_hand_right">
+    <group name="right_arm_hand">
         <chain base_link="torso" tip_link="r_wrist" />
     </group>
     <group name="base">
@@ -60,8 +60,9 @@
     <!--END EFFECTOR: Purpose: Represent information about an end effector.-->
     <end_effector name="left_eef" parent_link="l_wrist" group="left_hand" />
     <end_effector name="right_eef" parent_link="r_wrist" group="right_hand" />
-    <end_effector name="leg_right_eef" parent_link="l_ankle" group="leg_right" />
-    <end_effector name="leg_left_eef" parent_link="r_ankle" group="leg_left" />
+    <end_effector name="left_leg_eef" parent_link="r_ankle" group="left_leg" />
+    <end_effector name="right_leg_eef" parent_link="l_ankle" group="right_leg" />
+    <end_effector name="head_eef" parent_link="Head" group="head" />
     <!--VIRTUAL JOINT: Purpose: this element defines a virtual joint between a robot link and an external frame of reference (considered fixed with respect to the robot)-->
     <virtual_joint name="virtual_joint" type="planar" parent_frame="odom" child_link="base_link" />
     <!--PASSIVE JOINT: Purpose: this element is used to mark joints that are not actuated-->
