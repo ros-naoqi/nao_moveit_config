@@ -2,6 +2,11 @@
 Changelog for package nao_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* updated dependency list
+* Contributors: Mikael Arguedas
+
 0.0.7 (2016-01-23)
 ------------------
 * homogenize group names to match side_bodyChain
