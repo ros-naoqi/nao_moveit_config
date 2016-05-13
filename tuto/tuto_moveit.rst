@@ -18,7 +18,7 @@ or clone the repo in your workspace
 
 .. code-block:: bash
 
-	git clone git@github.com:ros-nao/nao_robot.git
+	git clone https://github.com/ros-naoqi/nao_robot.git
 	cd ..
 	catkin_make
 
