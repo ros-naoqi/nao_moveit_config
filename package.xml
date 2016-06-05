@@ -11,8 +11,8 @@
 
   <license>BSD</license>
 
-  <url type="bugtracker">https://github.com/ros-nao/nao_moveit_config/issues</url>
-  <url type="repository">https://github.com/ros-nao/nao_moveit_config</url>
+  <url type="bugtracker">https://github.com/ros-naoqi/nao_moveit_config/issues</url>
+  <url type="repository">https://github.com/ros-naoqi/nao_moveit_config</url>
 
   <build_depend>nao_description</build_depend>
 
