@@ -33,7 +33,7 @@ And your ready to play with your nao
 2. Run MoveIt
 =============
 
-Without robot
+Without a robot
 -------------
 You can run this moveit package either unconnected to any robot or attached to a robot (real or simulated):
 For a standalone execution :
@@ -42,43 +42,52 @@ For a standalone execution :
 
     roslaunch nao_moveit_config demo.launch
 
-On a real nao
+Once launching the demo, you should see the robot in MoveIt! GUI like this: 
+
+.. image:: tuto/moveit_launch.png
+   :width: 100%
+
+On a real robot
 -------------
 To launch it on a real nao you need:
-   - nao_dcm (https://github.com/ros-aldebaran/nao_dcm_robot)
+   - nao_dcm_bringup (https://github.com/ros-aldebaran/nao_dcm_robot)
    - nao_control (https://github.com/ros-aldebaran/nao_virtual)
 
-First set NAO_IP environment variable to your robot PI address
+First, set NAO_IP environment variable to your robot's IP address:
 
-Modify the bringup configuration file : nao_dcm_bringup/config/nao_dcm.yaml 
+.. code-block:: bash
 
-Set the rosparam "RobotIP" to your Nao's IP address
+    export NAO_IP=<YOUR_ROBOT_IP>
+
+Launch the DCM bringup:
 
 .. code-block:: bash
 
     roslaunch nao_dcm_bringup nao_dcm_H25_bringup_remote.launch
     
-Wait until nao_dcm_bringup is ready then run:
+Wait until it is ready, then run:
 
 .. code-block:: bash
 
     roslaunch nao_moveit_config moveit_planner.launch
 
 
-On a simulated nao (in gazebo)
+On a simulated robot (in Gazebo)
 ------------------------------
-To launch it on a gazebo simulated nao you need : 
-   - nao_dcm (https://github.com/ros-aldebaran/nao_dcm_robot)
+To use MoveIt! with Gazebo simulation, you need:
+   - nao_dcm_bringup (https://github.com/ros-aldebaran/nao_dcm_robot)
    - nao_control (https://github.com/ros-aldebaran/nao_virtual)
    - nao_gazebo_plugin (https://github.com/ros-aldebaran/nao_virtual)
+
+Launch Gazebo, like this:
 
 .. code-block:: bash
 
     roslaunch nao_gazebo_plugin nao_gazebo_plugin_H25.launch
     
-Wait until nao_gazebo is ready then click on the pla button in gazebo.
+Wait until it is ready, then click on the Play button in Gazebo.
 
-Finally run:
+Finally, start MoveIt!:
 
 .. code-block:: bash
 
@@ -89,8 +98,8 @@ This is based on the work of Konstantinos Chatzilygeroudis: https://github.com/c
 3 Use Moveit:
 =============
 RVIZ has been open: you can see that a MotionPlanning plugin has been launched.
-First check the box "Allow approximate IK Solutions" on the bottom of the left column.
-Then click on the Planning tab.
+First check the box "Allow approximate IK Solutions" on the bottom of the left control panel.
+Then, go to the Planning tab.
 
 Select which part of the robot you want to move:
 In the plugin list on the upper part of the left column, you can select a group under MotionPlanning/Planning Request/Planning Group 
