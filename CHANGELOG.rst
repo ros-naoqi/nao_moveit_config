@@ -2,8 +2,8 @@
 Changelog for package nao_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.0.10 (2016-09-18)
+-------------------
 * Update README.rst
 * adding RRT as default planner
 * remove vrabaud as a maintainer
