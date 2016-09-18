@@ -2,6 +2,17 @@
 Changelog for package nao_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Update README.rst
+* adding RRT as default planner
+* remove vrabaud as a maintainer
+* Merge pull request `#12 <https://github.com/ros-naoqi/nao_moveit_config/issues/12>`_ from ros-naoqi/update_dead_links
+  update dead links
+* update dead links
+* updating the README
+* Contributors: Mikael Arguedas, Natalia Lyubova, Vincent Rabaud
+
 0.0.9 (2016-02-03)
 ------------------
 * remove nao_meshes from dependency because license not displayed on buildfarm
