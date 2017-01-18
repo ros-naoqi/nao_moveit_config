@@ -7,7 +7,7 @@
   <arg name="version" default="V40"/>
   
   <!-- Load universal robot description format (URDF) -->
-  <param if="$(arg load_robot_description)" name="$(arg robot_description)" command="$(find xacro)/xacro.py '$(find nao_description)/urdf/nao$(arg version)_generated_urdf/nao_robot.xacro'"/>
+  <param if="$(arg load_robot_description)" name="$(arg robot_description)" command="$(find xacro)/xacro --inorder '$(find nao_description)/urdf/nao$(arg version)_generated_urdf/nao_robot.xacro'"/>
   <!-- The semantic description that corresponds to the URDF -->
   <param name="$(arg robot_description)_semantic" textfile="$(find nao_moveit_config)/config/NaoH25V40.srdf" />
   
