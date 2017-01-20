@@ -2,6 +2,21 @@
 Changelog for package nao_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge pull request `#18 <https://github.com/ros-naoqi/nao_moveit_config/issues/18>`_ from ros-naoqi/update_maintainers
+  update maintainers
+* update maintainers
+* Merge pull request `#17 <https://github.com/ros-naoqi/nao_moveit_config/issues/17>`_ from ros-naoqi/nlyubova-patch-2
+  Update the execution time
+* Update the execution time
+* Merge pull request `#16 <https://github.com/ros-naoqi/nao_moveit_config/issues/16>`_ from ros-naoqi/fix-deprecated-warnings
+  Fix deprecated warnings
+* update parameter namespace
+* fix deprecated xacro call
+* use action rather than service for trajectory execution
+* Contributors: Mikael Arguedas, Natalia Lyubova
+
 0.0.10 (2016-09-18)
 -------------------
 * Update README.rst
