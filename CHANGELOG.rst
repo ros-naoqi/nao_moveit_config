@@ -2,8 +2,8 @@
 Changelog for package nao_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.0.11 (2017-01-20)
+-------------------
 * Merge pull request `#18 <https://github.com/ros-naoqi/nao_moveit_config/issues/18>`_ from ros-naoqi/update_maintainers
   update maintainers
 * update maintainers
